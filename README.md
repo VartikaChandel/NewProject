@@ -1,3 +1,3 @@
 # My project
 
-GREEN BIN - Green Segregation System
+GREEN BIN - Green Segregation  Game
