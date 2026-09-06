@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenBin – Waste Segregation Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>♻️ GreenBin</h1>
+    <p>Drag and drop waste items into the correct bin!</p>
+  </header>
+
+  <section id="timer">
+    <h3>⏳ Time Left: <span id="time">60</span>s</h3>
+  </section>
+
+  <main>
+    <div class="bins">
+      <div class="bin" data-type="organic">Organic</div>
+      <div class="bin" data-type="recyclable">Recyclable</div>
+      <div class="bin" data-type="hazardous">Hazardous</div>
+    </div>
+
+    <div class="items"></div>
+
+    <section id="scoreboard">
+      <h2>Score: <span id="score">0</span></h2>
+    </section>
+
+    <section id="tips">
+      <h3>Eco Tip 💡</h3>
+      <p id="eco-tip">Start by sorting your kitchen waste daily!</p>
+    </section>
+
+    <section id="leaderboard">
+      <h3>🏆 Leaderboard</h3>
+      <ul id="leaderboard-list"></ul>
+    </section>
+  </main>
+
+  <audio id="correct-sound" src="assets/sounds/correct.mp3"></audio>
+  <audio id="wrong-sound" src="assets/sounds/wrong.mp3"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
